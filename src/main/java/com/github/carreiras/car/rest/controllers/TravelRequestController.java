@@ -3,8 +3,11 @@ package com.github.carreiras.car.rest.controllers;
 import com.github.carreiras.car.domain.entities.TravelRequest;
 import com.github.carreiras.car.mappers.TravelRequestMapper;
 import com.github.carreiras.car.rest.dtos.TravelRequestInput;
+import com.github.carreiras.car.rest.dtos.TravelRequestOutput;
 import com.github.carreiras.car.services.TravelService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.RepresentationModel;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,11 +24,13 @@ public class TravelRequestController {
     private TravelService travelService;
 
     @Autowired
-    private TravelRequestMapper travelRequestMapper;
+    private TravelRequestMapper mapper;
 
     @PostMapping
-    public TravelRequest makeTravelRequest(@RequestBody TravelRequestInput travelRequestInput) {
-        return travelService.saveTravelRequest(travelRequestMapper.map(travelRequestInput));
+    public EntityModel<TravelRequestOutput> makeTravelRequest(@RequestBody TravelRequestInput travelRequestInput) {
+        TravelRequest request = travelService.saveTravelRequest(mapper.map(travelRequestInput));
+        TravelRequestOutput output = mapper.map(request);
+        return mapper.buildOutputModel(request, output);
     }
 /*
     @PutMapping("/{id}")

@@ -12,7 +12,7 @@ public class TravelRequest {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
     @ManyToOne
     private Passenger passenger;
