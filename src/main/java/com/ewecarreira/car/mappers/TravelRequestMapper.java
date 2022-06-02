@@ -1,11 +1,5 @@
-package com.github.carreiras.car.mappers;
+package com.ewecarreira.car.mappers;
 
-import com.github.carreiras.car.domain.entities.Passenger;
-import com.github.carreiras.car.domain.entities.TravelRequest;
-import com.github.carreiras.car.domain.repositories.PassengerRepository;
-import com.github.carreiras.car.rest.controllers.PassengerController;
-import com.github.carreiras.car.rest.dtos.TravelRequestInput;
-import com.github.carreiras.car.rest.dtos.TravelRequestOutput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.Link;
@@ -13,6 +7,13 @@ import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ResponseStatusException;
+
+import com.ewecarreira.car.domain.entities.Passenger;
+import com.ewecarreira.car.domain.entities.TravelRequest;
+import com.ewecarreira.car.domain.repositories.PassengerRepository;
+import com.ewecarreira.car.rest.controllers.PassengerController;
+import com.ewecarreira.car.rest.dtos.TravelRequestInput;
+import com.ewecarreira.car.rest.dtos.TravelRequestOutput;
 
 @Component
 public class TravelRequestMapper {

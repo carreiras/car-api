@@ -1,7 +1,8 @@
-package com.github.carreiras.car.domain.repositories;
+package com.ewecarreira.car.domain.repositories;
 
-import com.github.carreiras.car.domain.entities.Driver;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ewecarreira.car.domain.entities.Driver;
 
 public interface DriverRepository extends JpaRepository<Driver, Long> {
 }

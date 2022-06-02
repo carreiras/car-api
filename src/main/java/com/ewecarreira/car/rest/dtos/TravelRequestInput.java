@@ -1,4 +1,4 @@
-package com.github.carreiras.car.rest.dtos;
+package com.ewecarreira.car.rest.dtos;
 
 import lombok.Data;
 

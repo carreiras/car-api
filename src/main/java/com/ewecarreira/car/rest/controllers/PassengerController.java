@@ -1,13 +1,14 @@
-package com.github.carreiras.car.rest.controllers;
+package com.ewecarreira.car.rest.controllers;
 
-import com.github.carreiras.car.domain.entities.Passenger;
-import com.github.carreiras.car.domain.repositories.PassengerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+
+import com.ewecarreira.car.domain.entities.Passenger;
+import com.ewecarreira.car.domain.repositories.PassengerRepository;
 
 import java.util.List;
 import java.util.Optional;

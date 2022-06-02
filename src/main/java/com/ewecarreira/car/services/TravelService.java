@@ -1,10 +1,11 @@
-package com.github.carreiras.car.services;
+package com.ewecarreira.car.services;
 
-import com.github.carreiras.car.domain.entities.TravelRequest;
-import com.github.carreiras.car.domain.enums.TravelRequestStatus;
-import com.github.carreiras.car.domain.repositories.TravelRequestRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.ewecarreira.car.domain.entities.TravelRequest;
+import com.ewecarreira.car.domain.enums.TravelRequestStatus;
+import com.ewecarreira.car.domain.repositories.TravelRequestRepository;
 
 import java.util.Date;
 

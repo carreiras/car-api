@@ -1,11 +1,12 @@
-package com.github.carreiras.car.rest.dtos;
-
-import com.github.carreiras.car.domain.enums.TravelRequestStatus;
-import lombok.Data;
-import org.springframework.hateoas.EntityModel;
-import org.springframework.hateoas.RepresentationModel;
+package com.ewecarreira.car.rest.dtos;
 
 import java.util.Date;
+
+import org.springframework.hateoas.RepresentationModel;
+
+import com.ewecarreira.car.domain.enums.TravelRequestStatus;
+
+import lombok.Data;
 
 @Data
 public class TravelRequestOutput extends RepresentationModel<TravelRequestOutput> {

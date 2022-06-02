@@ -1,19 +1,19 @@
-package com.github.carreiras.car.rest.controllers;
+package com.ewecarreira.car.rest.controllers;
 
-import com.github.carreiras.car.domain.entities.TravelRequest;
-import com.github.carreiras.car.mappers.TravelRequestMapper;
-import com.github.carreiras.car.rest.dtos.TravelRequestInput;
-import com.github.carreiras.car.rest.dtos.TravelRequestOutput;
-import com.github.carreiras.car.services.TravelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.EntityModel;
-import org.springframework.hateoas.RepresentationModel;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.ewecarreira.car.domain.entities.TravelRequest;
+import com.ewecarreira.car.mappers.TravelRequestMapper;
+import com.ewecarreira.car.rest.dtos.TravelRequestInput;
+import com.ewecarreira.car.rest.dtos.TravelRequestOutput;
+import com.ewecarreira.car.services.TravelService;
 
 @Service
 @RestController

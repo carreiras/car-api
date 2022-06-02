@@ -1,7 +1,8 @@
-package com.github.carreiras.car.domain.repositories;
+package com.ewecarreira.car.domain.repositories;
 
-import com.github.carreiras.car.domain.entities.TravelRequest;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ewecarreira.car.domain.entities.TravelRequest;
 
 public interface TravelRequestRepository extends JpaRepository<TravelRequest, Long> {
 }

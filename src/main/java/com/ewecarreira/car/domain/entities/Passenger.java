@@ -1,4 +1,4 @@
-package com.github.carreiras.car.domain.entities;
+package com.ewecarreira.car.domain.entities;
 
 import lombok.Data;
 

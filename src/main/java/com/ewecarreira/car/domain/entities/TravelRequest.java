@@ -1,9 +1,11 @@
-package com.github.carreiras.car.domain.entities;
+package com.ewecarreira.car.domain.entities;
 
-import com.github.carreiras.car.domain.enums.TravelRequestStatus;
 import lombok.Data;
 
 import javax.persistence.*;
+
+import com.ewecarreira.car.domain.enums.TravelRequestStatus;
+
 import java.util.Date;
 
 @Data
